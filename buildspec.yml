@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      php: 8.1
+
+  build:
+    commands:
+      - echo "Build started"
+      - echo "Nothing to build for PHP project"
+
+artifacts:
+  files:
+    - '**/*'
