@@ -1,0 +1,332 @@
+.title{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.title span{
+    color: white;
+}
+
+
+.goBackButton{
+    border: 1px solid #000;
+    margin-top: 10%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #dadada;
+    color: #000;
+    border-radius: 10px;
+    position: absolute;
+    right: 60px;
+    top: 0;
+}
+
+.inventory-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border: 0px solid #333;
+    padding: 0px 200px;
+    margin-top: 1%;
+}
+
+.inventory-box button{
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #dadada;
+    color: #000;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.inventory-box button:hover{
+    transform: translateY(-3px);
+    background-color: #000;
+    color: #fff;
+}
+
+form{
+    border: 0px solid #000;
+    padding: 10px 40px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+form .left-form{
+    border: 0px solid #000;
+    flex-basis: 35%;
+}
+
+
+form .left-form .input-fields{
+    display: grid;
+}
+
+form .left-form .input-fields label{
+    margin-top: 5px;
+    color: #000;
+}
+
+form .left-form .input-fields input, select{
+    border: 1px solid #aaa;
+    width: 100%;
+    height: 35px;
+    padding-left: 5px;
+}
+
+form .left-form .input-fields input::placeholder{
+    color: #000;
+}
+
+form .left-form .input-fields select{
+    cursor: pointer;
+}
+
+
+form .right-form{
+    flex-basis: 35%;
+}
+
+form .right-form .input-fields{
+    display: grid;
+}
+
+form .right-form .input-fields label{
+    margin-top: 5px;
+    color: #000;
+}
+
+form .right-form .input-fields input{
+    border: 1px solid #aaa;
+    width: 100%;
+    height: 35px;
+    padding-left: 5px;
+}
+
+form .right-form .input-fields input::placeholder{
+    color: #000;
+}
+
+form .right-form .input-fields select{
+    border: 1px solid #aaa;
+    width: 100%;
+    height: 35px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+form .right-form .input-fields .datebox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+form .right-form .addButton{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: rgba(161, 88, 4, 0.822);
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form .left-form .searchButton{
+    width: 100%;
+    height: 40px;
+    background-color: #dadada;
+    color: #000;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+table{
+    width: 100%;
+}
+
+table, table tr th, tr td{
+    border: 1px solid #333;
+}
+
+.loginButton{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(9, 156, 224);
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    margin-top: 10px;
+}
+
+form .input-fields{
+    margin-top: 10px;
+}
+
+.logoutBtn{
+    position: absolute;
+    right: 100px;
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    top: 150px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.user-title{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+}
+
+/* change password box */
+/* General body styling */
+.password-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for centering */
+.container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Title styling */
+.password-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* Form styling */
+.change-password-form .form-group {
+    margin-bottom: 20px;
+}
+
+.change-password-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.change-password-form{
+    display: grid;
+}
+
+.change-password-form input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.change-password-form input:focus {
+    border-color: #4facfe;
+    outline: none;
+}
+
+/* Button styling */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #00c3ff;
+}
+
+@media (max-width: 420px) {
+    .container{
+        width: 280px;
+        height: 500px;
+    }
+}
+
+
+.go-back{
+    padding: 10px 30px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.go-back a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.logoutBtn{
+    background-color: #dadada;
+    color: #000;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.logoutBtn:hover{
+    transform: translateY(-4px);
+    background: #000;
+    color: #fff;
+}
+
+.addInventory{
+    background-color: #fff;
+    width: 70%;
+    color: #000;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.form-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

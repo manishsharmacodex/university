@@ -1,0 +1,267 @@
+/* RESET STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    overflow-x: hidden;
+}
+
+/* NAVIGATION BAR */
+.admin-nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.admin-nav-bar .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.admin-nav-bar .user-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.admin-nav-bar .user-nav .user-title {
+    font-size: 16px;
+}
+
+/* MAIN CONTAINER */
+.admin-main-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding: 80px 20px 20px;
+    gap: 20px;
+}
+
+/* LEFT PANEL */
+.admin-box {
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-width: 250px;
+}
+
+.admin-box button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.admin-box button:hover {
+    transform: scale(1.05);
+    background-color: #333;
+}
+
+/* RIGHT PANEL */
+.admin-main-box .admin-right {
+    flex: 2 1 400px;
+    max-width: 800px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-main-box .admin-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+/* FORM */
+.admin-main-box .admin-right form {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(14px);
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.admin-main-box .admin-right form .input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-main-box .admin-right form .input-fields label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.admin-main-box .admin-right form .input-fields input,
+.admin-main-box .admin-right form .input-fields select {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.8);
+    outline: none;
+}
+
+.admin-main-box .admin-right form .registerButton {
+    width: 100%;
+    height: 45px;
+    background-color: rgba(4, 88, 121, 0.801);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.admin-main-box .admin-right form .registerButton:hover {
+    background-color: rgba(3, 66, 90, 0.9);
+}
+
+/* LOGOUT BUTTON */
+.logout {
+    width: auto;
+    height: 35px;
+    padding: 0 15px;
+    background-color: tomato;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.logout:hover {
+    background-color: #e05238;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .admin-main-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .admin-box {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .admin-main-box .admin-right {
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Navigation Bar */
+    .admin-nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    .admin-nav-bar .title {
+        font-size: 18px;
+    }
+
+    .admin-nav-bar .user-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    /* Main Layout */
+    .admin-main-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 70px 10px 20px; /* Account for fixed nav */
+        gap: 15px;
+    }
+
+    .admin-box {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .admin-main-box .admin-right {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    /* Form */
+    .admin-main-box .admin-right form {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 15px;
+    }
+
+    .admin-main-box .admin-right form .input-fields input,
+    .admin-main-box .admin-right form .input-fields select {
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .admin-main-box .admin-right form .input-fields label {
+        font-size: 13px;
+    }
+
+    .admin-main-box .admin-right form .registerButton {
+        height: 42px;
+        font-size: 15px;
+    }
+
+    .admin-box button {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    /* Logout Button */
+    .logout {
+        height: 32px;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+
